@@ -40,6 +40,11 @@ class Flexpool {
     const url = '/pool/minersOnline';
     return this.request(url, {});
   }
+
+  getWorkersOnline() {
+    const url = '/pool/workersOnline';
+    return this.request(url, {});
+  }
 }
 
 module.exports = Flexpool;

@@ -9,4 +9,5 @@ test('should return new Flexpool client', () => {
   expect(client.getPoolHashrate).toBeDefined();
   expect(client.getPoolHashrateChart).toBeDefined();
   expect(client.getMinersOnline).toBeDefined();
+  expect(client.getWorkersOnline).toBeDefined();
 });

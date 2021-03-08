@@ -1,4 +1,4 @@
-const Flexpool = require('.');
+var Flexpool = require('.');
 
 const client = new Flexpool();
 

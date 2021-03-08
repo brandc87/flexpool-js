@@ -30,6 +30,16 @@ class Flexpool {
     const url = '/pool/hashrate';
     return this.request(url, {});
   }
+
+  getPoolHashrateChart() {
+    const url = '/pool/hashrateChart';
+    return this.request(url, {});
+  }
+
+  getMinersOnline() {
+    const url = '/pool/minersOnline';
+    return this.request(url, {});
+  }
 }
 
 module.exports = Flexpool;

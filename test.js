@@ -7,5 +7,6 @@ test('should be defined', () => {
 test('should return new Flexpool client', () => {
   const client = new Flexpool();
   expect(client.getPoolHashrate).toBeDefined();
+  expect(client.getPoolHashrateChart).toBeDefined();
   expect(client.getMinersOnline).toBeDefined();
 });

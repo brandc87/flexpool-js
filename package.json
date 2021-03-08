@@ -1,7 +1,7 @@
 {
   "name": "flexpool-js",
   "version": "1.0.0",
-  "description": "",
+  "description": "Flexpool API wrapper",
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
@@ -9,9 +9,21 @@
     "test": "jest",
     "test:cov": "npm run test -- --coverage"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "api",
+    "wrapper",
+    "flexpool",
+    "mining",
+    "cryptocurrency"
+  ],
+  "author": "Carl Brand",
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/brandc87/flexpool-js",
+    "type": "git"
+  },
+  "homepage": "https://github.com/brandc87/flexpool-js",
+  "bugs": "https://github.com/brandc87/flexpool-js",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "eslint": "^7.21.0",

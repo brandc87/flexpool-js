@@ -43,10 +43,5 @@
   },
   "dependencies": {
     "isomorphic-unfetch": "^3.1.0"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run lint"
-    }
   }
 }

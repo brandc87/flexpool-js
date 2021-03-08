@@ -1,6 +1,9 @@
 # Flexpool-js
 
+ [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/brandc87/flexpool-js/blob/main/LICENSE)
+
 > Flexpool API wrapper
+
 A simple wrapper around the Flexpool API.
 
 ## Install

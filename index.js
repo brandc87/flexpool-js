@@ -45,6 +45,36 @@ class Flexpool {
     const url = '/pool/workersOnline';
     return this.request(url, {});
   }
+
+  getBlocks(page = 0) {
+    const url = `/pool/blocks?page=${page}`;
+    return this.request(url, {});
+  }
+
+  getBlockCount() {
+    const url = '/pool/blockCount';
+    return this.request(url, {});
+  }
+
+  getTopMiners() {
+    const url = '/pool/topMiners';
+    return this.request(url, {});
+  }
+
+  getTopDonators() {
+    const url = '/pool/topDonators';
+    return this.request(url, {});
+  }
+
+  getAverageLuckRoundtime() {
+    const url = '/pool/avgLuckRoundtime';
+    return this.request(url, {});
+  }
+
+  getCurrentLuck() {
+    const url = '/pool/currentLuck';
+    return this.request(url, {});
+  }
 }
 
 module.exports = Flexpool;

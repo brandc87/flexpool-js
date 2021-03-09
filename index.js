@@ -26,11 +26,19 @@ class Flexpool {
     });
   }
 
+  /**
+   * Returns the miners balance.
+   * @param {string} address The ethereum address of the miner.
+   */
   getMinerBalance(address) {
     const url = `/miner/${address}/balance`;
     return this.request(url, {});
   }
 
+  /**
+   * Returns the miners current stats.
+   * @param {string} address The ethereum address of the miner.
+   */
   getMinerCurrentStats(address) {
     const url = `/miner/${address}/current`;
     return this.request(url, {});

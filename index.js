@@ -26,6 +26,16 @@ class Flexpool {
     });
   }
 
+  getMinerBalance(address) {
+    const url = `/miner/${address}/balance`;
+    return this.request(url, {});
+  }
+
+  getMinerCurrentStats(address) {
+    const url = `/miner/${address}/current`;
+    return this.request(url, {});
+  }
+
   getPoolHashrate() {
     const url = '/pool/hashrate';
     return this.request(url, {});
@@ -75,6 +85,28 @@ class Flexpool {
     const url = '/pool/currentLuck';
     return this.request(url, {});
   }
+
+  formatWeis = (weis) => {
+    const amount = (weis / 10 ** 18).toPrecision(5);
+
+    if (amount % 1 === 0) {
+      return parseInt(amount);
+    }
+    return amount;
+  };
+
+  formatHashrate = (hashrate) => {
+    if (hashrate === 0) {
+      return '0 Bytes';
+    }
+
+    const k = 1000;
+    const sizes = ['hashes', 'kH', 'MH', 'GH', 'TH', 'PH', 'EH', 'ZH', 'YH'];
+
+    const i = Math.floor(Math.log(hashrate) / Math.log(k));
+
+    return `${parseFloat((hashrate / k ** i).toFixed(2))} ${sizes[i]}/s`;
+  };
 }
 
 module.exports = Flexpool;

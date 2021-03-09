@@ -36,6 +36,86 @@ class Flexpool {
     return this.request(url, {});
   }
 
+  getMinerDailyStats(address) {
+    const url = `/miner/${address}/daily`;
+    return this.request(url, {});
+  }
+
+  getMinerStats(address) {
+    const url = `/miner/${address}/stats`;
+    return this.request(url, {});
+  }
+
+  getMinerWorkerCount(address) {
+    const url = `/miner/${address}/workerCount`;
+    return this.request(url, {});
+  }
+
+  getMinerWorkers(address) {
+    const url = `/miner/${address}/workers`;
+    return this.request(url, {});
+  }
+
+  getMinerExists(address) {
+    const url = `/miner/${address}/exists`;
+    return this.request(url, {});
+  }
+
+  getMinerChart(address) {
+    const url = `/miner/${address}/chart`;
+    return this.request(url, {});
+  }
+
+  getMinerPayments(address, page = 0) {
+    const url = `/miner/${address}/payments?page=${page}`;
+    return this.request(url, {});
+  }
+
+  getMinerPaymentCount(address) {
+    const url = `/miner/${address}/paymentCount`;
+    return this.request(url, {});
+  }
+
+  getMinerPaymentsChart(address) {
+    const url = `/miner/${address}/paymentsChart`;
+    return this.request(url, {});
+  }
+
+  getMinerBlocks(address, page = 0) {
+    const url = `/miner/${address}/blocks?page=${page}`;
+    return this.request(url, {});
+  }
+
+  getMinerBlockCount(address) {
+    const url = `/miner/${address}/blockCount`;
+    return this.request(url, {});
+  }
+
+  getMinerDetails(address) {
+    const url = `/miner/${address}/details`;
+    return this.request(url, {});
+  }
+
+  getMinerEstimatedDailyRevenue(address) {
+    const url = `/miner/${address}/estimatedDailyRevenue`;
+    return this.request(url, {});
+  }
+
+  getMinerRoundShare(address) {
+    const url = `/miner/${address}/roundShare`;
+    return this.request(url, {});
+  }
+
+  getMinerTotalPaid(address) {
+    const url = `/miner/${address}/totalPaid`;
+    return this.request(url, {});
+  }
+
+  getMinerTotalDonated(address) {
+    const url = `/miner/${address}/totalDonated`;
+    return this.request(url, {});
+  }
+
   getPoolHashrate() {
     const url = '/pool/hashrate';
     return this.request(url, {});

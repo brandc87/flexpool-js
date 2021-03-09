@@ -12,6 +12,10 @@ client.getMinerCurrentStats(miner).then((data) => {
   console.log(client.formatHashrate(data.result.effective_hashrate));
 });
 
+client.getMinerEstimatedDailyRevenue(miner).then((data) => {
+  console.log(`${client.formatWeis(data.result)} ETH Daily`);
+});
+
 client.getMinersOnline().then((data) => console.log(data));
 client.getWorkersOnline().then((data) => console.log(data));
 client.getBlocks().then((data) => console.log(data));

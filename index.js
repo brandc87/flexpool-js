@@ -57,7 +57,7 @@ class Flexpool {
   }
 
   getMinerExists(address) {
-    const url = `/miner/${address}/exists`;
+    const url = `/miner/${address}/exist`;
     return this.request(url, {});
   }
 

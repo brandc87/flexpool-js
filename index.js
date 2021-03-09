@@ -116,6 +116,26 @@ class Flexpool {
     return this.request(url, {});
   }
 
+  getWorkerCurrentStats(address, worker) {
+    const url = `/worker/${address}/${worker}/current`;
+    return this.request(url, {});
+  }
+
+  getWorkerDailyStats(address, worker) {
+    const url = `/worker/${address}/${worker}/daily`;
+    return this.request(url, {});
+  }
+
+  getWorkerStats(address, worker) {
+    const url = `/worker/${address}/${worker}/stats`;
+    return this.request(url, {});
+  }
+
+  getWorkerChart(address, worker) {
+    const url = `/worker/${address}/${worker}/chart`;
+    return this.request(url, {});
+  }
+
   getPoolHashrate() {
     const url = '/pool/hashrate';
     return this.request(url, {});
